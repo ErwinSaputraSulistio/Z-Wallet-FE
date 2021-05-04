@@ -1,16 +1,39 @@
-html,
-body {
-  padding: 0;
+/* BASE CONF */
+html, body { padding: 0; margin: 0; font-family: 'Nunito' }
+a { color: inherit; text-decoration: none; }
+input { border: none; }
+input:focus { outline: none; }
+input:invalid { box-shadow: none; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+* { box-sizing: border-box; }
+
+/* CSS ADD ASSETS/MODELS */
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+/* CSS FUNCTION GLOBAL */
+.showInAnimation {animation: showOpacity 0.5s;} @keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+.displayColumn { display: flex; flex-direction: column; }
+.displayRow { display: flex; flex-direction: row; }
+.hoverThis:hover { cursor: pointer; opacity: 0.5; }
+.nunitoFont { font-family: 'Nunito'; }
+.emptyInput { border-bottom: 0.1vw solid #A9A9A9; }
+.filledInput { border-bottom: 0.1vw solid #6379F4; }
+.wrongInput { border-bottom: 0.1vw solid indianred; }
+
+/* DESKTOP */
+@media(min-width: 768px){
+    
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+/* MOBILE */
+@media(max-width: 768px){
+    .loginDesktop { display: none; }
 }

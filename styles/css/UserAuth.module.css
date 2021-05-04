@@ -1,0 +1,56 @@
+/* DESKTOP */
+@media(min-width: 768px){
+    .authText, .authToYourExistingAccount, .zWalletMobileText { display: none; }
+    .authLeft {
+       background: url("https://user-images.githubusercontent.com/77045083/114581697-225fa900-9caa-11eb-827e-2cf6744f6819.png"); 
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 100vh;
+       padding: 3vw 9vw;
+       width: 55%;
+    }
+    .authRight { padding: 5vw; padding-left: 7vw; padding-right: 13vw; width: 45%; }
+    .startAccessingBankingNeeds { color: black; font-size: 1.5vw; font-weight: bold; line-height: 2.5vw }
+    .transferringMoneyIsEasierThanEver { color: #9F9F9F; font-size: 1vw; line-height: 2vw; margin: 2vw 0; }
+    .inputImageSize { height: 1.5vw; width: 1.5vw; }
+    .authInputOuterBorderStyling { align-items: center; justify-content: space-between; margin: 2vw 0 1vw 0; padding: 1vw 0; width: 100%; }
+    .authInputBox { font-size: 1vw; margin: 0 2vw; width: 100%; }
+    .forgotPassword { font-size: 1vw; text-align: right; }
+    .bigGapAuthButton, .smallGapAuthButton { border-radius: 0.5vw; font-size: 1vw; padding: 1vw 5vw; width: 100%; }
+    .dontHaveAnAccountLetsSignUp { font-size: 1vw; margin-top: 3vh; text-align: center; }
+    .signUpPage { padding-top: 5vh; padding-left: 7vw; padding-right: 13vw; width: 45%; }
+    .emptyInputBorderCreatePIN { border: 0.15vw solid #A9A9A9; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
+    .emptyInputBoxCreatePIN { background: transparent; border-bottom: 0.1vw solid #A9A9A9; font-size: 2vw; height: 100%; text-align: center; width: 100%; }
+    .filledInputBorderCreatePIN { border: 0.15vw solid #6E79F4; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
+    .filledInputBoxCreatePIN { background: transparent; color: black; font-size: 2vw; font-weight: bold; height: 100%; text-align: center; width: 100%; }
+ }
+ 
+ /* MOBILE */
+ @media(max-width: 768px){ 
+   .authLeft, .startAccessingBankingNeeds, .transferringMoneyIsEasierThanEver { display: none; }
+   .zWalletMobileTextArea { background: #FAFCFF; height: 250px; width: 100%; }
+   .zWalletMobileText { color: #6379F4; font-size: 24px; font-weight: 700; justify-content: center; margin-top: 100px; width: 100%; }
+   .authRight, .signUpPage { 
+      background: white; 
+      box-shadow: 0px 0px 75px rgba(155, 155, 155, 0.15); 
+      border-radius: 36px 36px 0 0; 
+      margin-top: 200px; 
+      padding: 40px 16px; 
+      position: absolute; 
+      text-align: center; 
+      width: 100%; 
+      }
+   .authToYourExistingAccount { color: #3A3D42; line-height: 24px; margin-top: 20px; }
+   .authText { font-size: 24px; font-weight: 700; }
+   .inputImageSize { height: 24px; width: 24px; }
+   .authInputOuterBorderStyling { margin-top: 50px; padding: 12px 0; }
+   .authInputBox { font-size: 16px; margin: 0 20px; }
+   .forgotPassword { font-size: 16px; margin: 16px 0; text-align: right; }
+   .bigGapAuthButton { border-radius: 12px; font-size: 18px; margin-top: 150px; padding: 16px; width: 100%; }
+   .smallGapAuthButton { border-radius: 12px; font-size: 18px; margin-top: 50px; padding: 16px; width: 100%; }
+   .dontHaveAnAccountLetsSignUp { font-size: 16px; line-height: 24px; margin-top: 24px; text-align: center; }
+   .emptyInputBorderCreatePIN { border: 0.2vw solid #A9A9A9; border-radius: 10px; height: 50px; margin-top: 48px; padding: 9px; width: 40px; }
+   .emptyInputBoxCreatePIN { background: transparent; border-bottom: 0.1vw solid #A9A9A9; font-size: 24px; height: 100%; text-align: center; width: 100%; }
+   .filledInputBorderCreatePIN { border: 0.2vw solid #6E79F4; border-radius: 10px; height: 50px; margin-top: 48px; padding: 9px; width: 40px; }
+   .filledInputBoxCreatePIN { background: transparent; color: black; font-size: 24px; font-weight: bold; height: 100%; text-align: center; width: 100%; }
+ }

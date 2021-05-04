@@ -1,0 +1,54 @@
+.navbar { position: sticky; top: 0; width: 100%; }
+.footer { bottom: 0; width: 100%; }
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   /* NAVBAR */
+   .navbarHelloUser, .navbarWhiteBell { display: none; }
+   .navbar { 
+      align-items: center; 
+      background: white; 
+      border-radius: 0 0 2vw 2vw; 
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05);
+      justify-content: space-between; 
+      padding: 1.5vw 9vw; 
+      z-index: 1;
+   }
+   .zWalletNavbarText { color: #6379F4; font-size: 2vw; font-weight: bold; }
+   .navbarUser { align-items: center; }
+   .navbarProfilePicture { border-radius: 0.77vw; height: 3vw; width: 3vw; }
+   .navbarUserInformation { margin: 0 1.5vw; }
+   .navbarUserName { font-size: 1.1vw; font-weight: bold; }
+   .navbarUserPhoneNumber { color: #3A3D42; font-size: 0.8vw; }
+   .navbarBlackBell { height: 1.5vw; width: 1.5vw; }
+   /* FOOTER */
+   .footer { background: #6379F4; color: white; font-size: 1vw; justify-content: space-between; padding: 1.5vw 9vw; width: 100%; }
+   /* SIDEMENU */
+   .sidemenu { background: white; border-radius: 1.5vw; box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); height: auto; justify-content: space-between; width: 20vw; }
+   .sidemenuButton { align-items: center; border-left: 0.3vw solid white; font-size: 1.1vw; margin-bottom: 2vw; padding: 0 2vw; }
+   .sidemenuButtonActive { align-items: center; border-left: 0.3vw solid #6379F4; color: #6379F4; font-size: 1.1vw; font-weight: bold; margin-bottom: 2vw; padding: 0 2vw; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   /* NAVBAR */
+   .zWalletNavbarText, .navbarUserPhoneNumber, .navbarBlackBell { display: none; }
+   .navbar { 
+      align-items: center; 
+      background: #6379F4; 
+      border-radius: 0 0 24px 24px; 
+      justify-content: space-between; 
+      padding: 32px 16px; 
+   }
+   .navbarUser { align-items: center; width: 100%; }
+   .navbarProfilePicture { height: 52px; width: 52px; }
+   .navbarUserInformation { margin: 0 20px; width: 100%; }
+   .navbarHelloUser, .navbarUserName { font-size: 18px; }
+   .navbarHelloUser { color: #D0D0D0; }
+   .navbarUserName { color: white; font-weight: bold; }
+   .navbarWhiteBell { height: 28px; width: 28px; }
+   /* FOOTER */
+   .footer { display: none; }
+   /* SIDEMENU */
+   .sidemenu { display: none; }
+}

@@ -1,17 +1,23 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const router = useRouter()
+  useEffect(() => {
+    router.push("/login")
+  }, [])
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Ciwin | Z-Wallet</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Ciwin | <a href="https://nextjs.org">Z Wallet!</a>
         </h1>
 
         <p className={styles.description}>
@@ -59,7 +65,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

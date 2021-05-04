@@ -1,0 +1,126 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .home { height: auto; justify-content: space-between; padding: 3vw 9vw; }
+   .homeBalanceAndData { height: auto; justify-content: space-between; width: 60vw; }
+   .topDashboard { 
+      background: #6379F4; 
+      border-radius: 1.5vw; 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      padding: 2vw; 
+      width: 100%; 
+   }
+   .dashboardBalanceText { color: #E0E0E0; font-size: 1.1vw; }
+   .userDashboardBalance { color: white; font-size: 2.5vw; font-weight: bold; margin: 1vw 0; }
+   .userDashboardPhone { color: #E0E0E0; font-size: 0.8vw; }
+   .topDashboardButtonArea { display: flex; flex-direction: column; justify-content: space-between; }
+   .topDashboardButton { 
+      align-items: center; 
+      background: rgba(255, 255, 255, 0.2); 
+      border: 0.1vw solid #FFFFFF; 
+      border-radius: 0.77vw; 
+      color: white; 
+      font-size: 1.1vw; 
+      font-weight: bold; 
+      padding: 0.77vw 2vw; 
+   }
+   .topDashboardButtonLogo { height: 1.77vw; margin-right: 1vw; width: 1.77vw; }
+   .bottomDashboard { 
+      display: flex; 
+      flex-direction: row; 
+      height: 100%; 
+      justify-content: space-between; 
+      margin-top: 1vw; 
+   }
+   .bottomDashboardLeft, .bottomDashboardRight { 
+      background: white; 
+      border-radius: 1.5vw; 
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); 
+      display: flex; 
+      flex-direction: column; 
+      padding: 2vw; 
+   }
+   .bottomDashboardLeft { width: 59%; }
+   .bottomDashboardRight { width: 39%; }
+   .bottomDashboardIncomeExpenseArea { 
+      align-self: center; 
+      display: flex; 
+      flex-direction: row;  
+      justify-content: space-between; 
+      width: 100%; 
+   }
+   .bottomDashboardGraphic { margin: auto; margin-top: 5vh; width: 25vw; }
+   .dashboardIncomeExpenseText { color: #6A6A6A; font-size: 0.9vw; margin: 0.5vw 0; }
+   .dashboardIncomeExpenseAmount { font-size: 1.1vw; font-weight: bold; }
+   .incomeExpenseArrow { height: 2vw; width: 2vw; }
+   .bottomDashboardRightTop { align-items: center; justify-content: space-between; width: 100%; }
+   .transactionHistoryText { font-size: 1.1vw; font-weight: bold; }
+   .seeAllText { color: #6379F4; font-size: 0.9vw; }
+   .transactionHistoryData { align-items: center; justify-content: space-between; margin-top: 2.5vw; width: 100%; }
+   .transactionHistoryDataInfo { width: 11vw; }
+   .transactionHistoryDataImg { border-radius: 1vw; height: 3.5vw; margin-right: 1vw; width: 3.5vw; }
+   .transactionUserName { font-size: 1.1vw; font-weight: bold; width: 10vw; }
+   .transactionCategory { color: #7A7886; font-size: 0.9vw; margin-top: 0.77vw; width: 10vw; }
+   .transactionAmount { font-size: 1vw; font-weight: bold; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .bottomDashboardLeft { display: none; }
+   .homeBalanceAndData { height: auto; width: 100%; }
+   .topDashboard { 
+      align-items: center; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      padding: 24px; 
+      padding-bottom: 0; 
+      width: 100%; 
+   }
+   .topDashboardMobile { 
+      background: #E5E8ED; 
+      border-radius: 20px; 
+      color: white; 
+      margin-top: 24px; 
+      padding: 24px; 
+      width: 100%; 
+   }
+   .dashboardBalanceText, .userDashboardPhone { color: #514F5B; font-size: 14px; }
+   .userDashboardBalance { color: black; font-size: 24px; font-weight: bold; margin: 10px 0; }
+   .topDashboardButtonArea { 
+      display: flex; 
+      flex-direction: row; 
+      justify-content: space-between; 
+      padding: 24px 0; 
+      width: 100%; 
+   }
+   .topDashboardButton {
+      align-items: center;
+      background: #6E79FD;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      padding: 13px 26px;
+   }
+   .topDashboardButtonLogo { height: 28px; margin-right: 12px; width: 28px; }
+   .bottomDashboardRight { padding: 0 24px; }
+   .bottomDashboardRightTop { justify-content: space-between; margin: 24px 0; width: 100%; }
+   .transactionHistoryText { font-size: 18px; font-weight: bold; }
+   .seeAllText { color: grey; font-size: 16px; }
+   .transactionHistoryData { 
+      align-items: center; 
+      background: white; 
+      border-radius: 10px; 
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); 
+      justify-content: space-between;
+      margin-bottom: 16px; 
+      padding: 16px; 
+      width: 100%; 
+   }
+   .transactionHistoryDataInfo { width: 100%; }
+   .transactionHistoryDataImg { border-radius: 10px; height: 55px; margin-right: 16px; width: 55px; }
+   .transactionUserName { font-size: 16px; font-weight: bold; }
+   .transactionCategory { color: #7A7886; font-size: 14px; margin-top: 8px; }
+   .transactionAmount { font-weight: bold; text-align: right; width: 150px; }
+}

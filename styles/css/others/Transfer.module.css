@@ -1,0 +1,57 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .transfer { justify-content: space-between; padding: 3vw 9vw; }
+   .transferSaldo { background: white; border-radius: 1vw; box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); height: 99vh; padding: 2vw; width: 60vw; }
+   .searchReceiverText { font-size: 1.5vw; font-weight: bold; }
+   .searchReceiverInputBorder { align-items: center; background: rgba(58, 61, 66, 0.1); border-radius: 0.77vw; margin: 2vw 0; padding: 1.1vw; }
+   .transferSearchLogo { height: 1.5vw; margin-right: 1vw; width: 1.5vw; }
+   .searchReceiverInputBox { background: transparent; color: rgba(58, 61, 66, 0.4); font-size: 1vw; width: 100%; }
+   .receiverBorder, .selectedReceiverBorder { border-radius: 0.5vw; box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); margin-bottom: 1vw; padding: 2vw; }
+   .receiverImage { border-radius: 0.5vw; height: 5vw; margin-right: 2vw; width: 5vw; }
+   .receiverName { font-size: 1.3vw; font-weight: bold; }
+   .receiverPhone { color: #7A7886; font-size: 1vw; }
+   .receiverName, .receiverPhone { margin: 0.33vw 0; }
+   .selectedReceiverBorder { margin: 2vw 0; }
+   .receiverBelowText { color: #7A7886; font-size: 1vw; }
+   .inputTransferSaldoAmount { color: #6379F4; font-size: 2vw; margin-top: 5vw; margin-bottom: 2vw; text-align: center; }
+   .inputTransferNote { border-bottom: 0.1vw solid #A9A9A9; color: #A9A9A9; font-size: 1vw; margin: 2vw 0; padding-bottom: 0.5vw; text-align: center; width: 33%; }
+   .yourAvailableSaldo { font-size: 1vw; text-align: center; }
+   .transferOuterBorder { margin-left: 37vw; width: 33%; }
+   .confirmTransferButton { border-radius: 0.5vw; font-size: 1vw; margin-top: 8vw; padding: 1vw; width: 100%; }
+   /* SHOW INPUT PIN */
+   .showInputPIN { 
+      background: #3A3D42;
+      height: 131.5vh;
+      opacity: 0.5;
+      position: absolute; 
+      top: 0; 
+      width: 100%;
+      z-index: 2; 
+   }
+   .inputTransferPINBorder {
+      background: white;
+      border-radius: 1vw;
+      padding: 2vw;
+      position: fixed;
+      top: 21%;
+      left: 33.5%;
+      width: 33vw;
+      z-index: 3;
+   }
+   .inputPINClose { align-items: center; justify-content: space-between; }
+   .enterPINText { font-size: 1.1vw; font-weight: bold; }
+   .enterYourDigitPINText { color: grey; font-size: 1vw; letter-spacing: 0.75px; margin-top: 1.5vw; }
+   .closeButton { height: 1.5vw; width: 1.5vw; }
+   /* INPUT PIN */
+   .inputPINZone { justify-content: space-between; margin: auto; padding: 3.3vw 0; width: 88%; }
+   .emptyInputBorderCreatePIN { border: 0.15vw solid #A9A9A9; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
+   .emptyInputBoxCreatePIN { background: transparent; border-bottom: 0.1vw solid #A9A9A9; font-size: 2vw; height: 100%; text-align: center; width: 100%; }
+   .filledInputBorderCreatePIN { border: 0.15vw solid #6E79F4; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
+   .filledInputBoxCreatePIN { background: transparent; color: black; font-size: 2vw; font-weight: bold; height: 100%; text-align: center; width: 100%; }
+   .transferSaldoButton { border-radius: 0.5vw; font-size: 1vw; margin-left: 19.5vw; padding: 1vw; width: 33%; }
+}
+ 
+ /* MOBILE */
+ @media(max-width: 768px) {
+    .transfer { display: none; }
+ }

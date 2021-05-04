@@ -1,0 +1,59 @@
+/* DESKTOP */
+@media(min-width: 768px) {
+   .history { height: auto; justify-content: space-between; padding: 3vw 9vw; }
+   .insideHistory { 
+      background: white; 
+      border-radius: 1vw; 
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); 
+      height: auto;
+      width: 60vw;  
+   }
+   .transferHistoryText { border-bottom: 0.1vw solid #DEDEDE; font-size: 1.5vw; font-weight: bold; padding: 2vw; }
+   .sortArea { margin: auto; margin-top: 2vw; padding: 0 2vw; }
+   .sortButton { align-items: center; background: #DADADA; font-size: 1vw; justify-content: center; padding: 1vw; transition-duration: 0.5s; width: 8vw; }
+   .historySenderButton { border-radius: 1vw 0 0 1vw; }
+   .historyAllButton { background: #A9A9A9; }
+   .historyReceiverButton { border-radius: 0 1vw 1vw 0; }
+   .transferHistoryDataZone { height: 55vh; padding: 2vw; }
+   .noTransferHistoryText { align-items: center; text-align: center; margin-top: 5.5vw; }
+   .noTransferHistoryBigText { font-size: 1.6vw; font-weight: bold; }
+   .noTransferHistorySmallText { color: #A9A9A9; font-size: 0.8vw; margin-top: 1vw; }
+   .confusedGif { height: 11vw; margin: 2.5vw 0; width: 11vw; }
+   .transferHistoryData { 
+      align-items: center; 
+      border-radius: 1vw;
+      justify-content: space-between;
+      margin-bottom: 1vw; 
+      padding: 2vw;
+      transition-duration: 0.5s;
+      width: 100%; 
+   }
+   @keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
+   .transferHistoryData:hover { box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); padding: 2vw 3.8vw; }
+   .transferHistoryData:hover .transferHistoryDeleteButton { animation: showOpacity 1s; display: block; }
+   .transferHistoryDataInfo { width: 11vw; }
+   .transferHistoryDataImg { border-radius: 1vw; height: 3.5vw; margin-right: 1vw; width: 3.5vw; }
+   .transferUserName { font-size: 1.1vw; font-weight: bold; width: 10vw; }
+   .transferCategory { color: #7A7886; font-size: 0.9vw; margin-top: 0.77vw; width: 15vw; }
+   .transferAmount { font-size: 1vw; font-weight: bold; }
+   .transferHistoryDeleteButton { display: none; margin-left: 1vw; margin-right: -4.5vw; margin-top: -4.5vw; }
+   .deleteButton { height: 3vw; width: 3vw; }
+   .paginationArea { margin: auto; margin-bottom: 5vw; padding: 2vw; }
+   .paginationButton { 
+      align-items: center; 
+      background: #DADADA; 
+      border-radius: 0.5vw; 
+      color: black;
+      font-size: 1.1vw;
+      height: 3vw; 
+      justify-content: center; 
+      margin: 0 1vw; 
+      transition-duration: 0.5s;
+      width: 3vw; 
+   }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .history { display: none; }
+}
