@@ -17,6 +17,10 @@
     "react": "17.0.2",
     "react-cookie": "^4.0.3",
     "react-dom": "17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.0",
     "sweetalert2": "^10.16.2",
     "universal-cookie": "^4.0.4",
     "url-loader": "^4.1.1"

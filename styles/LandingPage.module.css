@@ -1,0 +1,198 @@
+.ourPartner, .allFeatures { background: rgba(71, 58, 209, 0.06); }
+.ourPartnerImg { width: 100%; }
+.aboutApplication, .carouselZone { background: #FAFCFF; }
+.footer { color: #EFEFEF; }
+.footerText, .footerBottom, .footerBottomRight { justify-content: space-between; opacity: 0.77; }
+
+/* DESKTOP */
+@media(min-width: 768px) {
+   .header, .allFeatures { padding: 0 10vw; padding-bottom: 2.5vw; }
+   .ourPartner, .aboutApplication, .carouselZone, .footer { padding: 5vw 10vw; }
+   .title { font-size: 3.6vw; font-weight: bold; }
+   .text { font-size: 1.2vw; margin: 2.5vw 0; }
+   .footerBottom, .footerBottomRight { display: flex; flex-direction: row; }
+   /* NAVBAR */
+   .navbar { 
+      align-items: center;
+      background: white;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 0 0 1.5vw 1.5vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1.5vw 7.5vw;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+   }
+   .zWalletText { color: #6379F4; font-size: 1.75vw; font-weight: bold; }
+   .navBtnArea { justify-content: space-between; width: 20vw; }
+   .navBtnLogin, .navBtnSignUp { 
+      border: 0.11vw solid #6379F4; 
+      border-radius: 0.5vw; 
+      font-size: 1.1vw; 
+      padding: 0.5vw 1.5vw; 
+      text-align: center; 
+      width: 8.8vw; 
+   }
+   /* HEADER */
+   .headerPhoneImg { height: 50vw; width: 25vw; }
+   .headerRightSide { padding: 8.8vw; }
+   .tryItFree { 
+      border-radius: 0.77vw; 
+      font-size: 1.1vw; 
+      font-weight: bold; 
+      padding: 1vw 2vw; 
+      text-align: center; 
+      width: 10vw; 
+   }
+   .playStore { height: 2vw; width: 1.75vw; }
+   .appStore { height: 3vw; margin: 0 3vw; width: 3vw; }
+   /* ABOUT APPLICATION */
+   .aboutApplicationCardZone { display: flex; flex-direction: row; justify-content: space-between; margin-top: 2.5vw; width: 100%; }
+   .aboutApplicationCard { 
+      align-items: center; 
+      background: transparent; 
+      border-radius: 1.5vw; 
+      padding: 2.5vw; 
+      text-align: center;
+      transition-duration: 0.5s; 
+      width: 30%; 
+   }
+   .aboutApplicationCard:hover { background: white; cursor: pointer; box-shadow: 0px 0.25vw 1vw rgba(172, 172, 172, 0.15); }
+   .aboutApplicationCardLogo { height: 7.7vw; width: 7.7vw; }
+   .aboutApplicationCardTitle { font-size: 1.5vw; font-weight: bold; }
+   .aboutApplicationCardText { font-size: 1vw; margin: 2vw 0; }
+   /* ALL FEATURES */
+   .allFeaturesRightSide { padding: 5.5vw 0; width: 50vw; }
+   .allFeaturesCardZone { margin-top: 2.5vw; }
+   .allFeaturesCard { 
+      background: white; 
+      border-radius: 1vw; 
+      box-shadow: 0px 0.25vw 1vw rgba(172, 172, 172, 0.15); 
+      margin: 1.5vw 0; 
+      padding: 1.5vw; 
+   }
+   .allFeaturesCardTitle { font-size: 1.3vw; }
+   .allFeaturesCardText { font-size: 1vw; margin-top: 1vw; }
+   /* CAROUSEL */
+   .carouselCard { 
+      background: white; 
+      border-radius: 1vw; 
+      box-shadow: 0vw 0.25vw 1vw rgba(172, 172, 172, 0.15); 
+      height: 33vw;
+      margin: 2.5vw;
+      padding: 3.3vw; 
+      transition-duration: 0.3s;
+      width: 100%;
+   }
+   .userImg { border-radius: 0.77vw; height: 8.8vw; width: 8.8vw; }
+   .userName { font-size: 1.5vw; font-weight: bold; margin-top: 1vw; }
+   .userJob { color: #56585B; font-size: 1vw; }
+   .userSay { font-size: 1.1vw; letter-spacing: 0.75px; margin-top: 2.5vw; text-align: center; }
+   /* FOOTER */
+   .footerZWallet { color: white; font-size: 2.2vw; font-weight: bold; }
+   .footerText { font-size: 1.1vw; margin: 3.3vw 0; width: 25vw; }
+   .footerBottom { border-top: 0.1vw solid #EFEFEF; font-size: 1vw; padding-top: 2vw; }
+   .footerBottomRight { width: 22vw; }
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+   .header, .ourPartner, .aboutApplication, .allFeaturesRightSide, .carouselZone, .footer { padding: 10vw; }
+   .title { font-size: 7.2vw; font-weight: bold; }
+   .text { font-size: 3.6vw; margin: 7.5vw 0; }
+   .footerBottom, .footerBottomRight { display: flex; flex-direction: column; }
+
+   /* NAVBAR */
+   .navbar { 
+      align-items: center;
+      background: white;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 0 0 7.7vw 7.7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5vw 10vw;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+   }
+   .zWalletText { color: #6379F4; font-size: 7.7vw; font-weight: bold; padding: 2.5vw 0; }
+   .navBtnArea { justify-content: space-between; padding: 7.5vw 0; padding-bottom: 5vw; width: 100%; }
+   .navBtnLogin, .navBtnSignUp { 
+      border: 0.11vw solid #6379F4; 
+      border-radius: 2.5vw; 
+      font-size: 5vw; 
+      padding: 1.5vw 4.5vw; 
+      text-align: center; 
+      width: 35vw; 
+   }
+   /* HEADER */
+   .headerPhoneImg { display: none; }
+   .header { justify-content: center; text-align: center; }
+   .tryItFree { 
+      border-radius: 2.5vw; 
+      font-size: 4.8vw; 
+      font-weight: bold;
+      margin: auto;
+      padding: 2.5vw 5vw; 
+      text-align: center; 
+      width: 50vw; 
+   }
+   .storeBtnArea { margin: auto; }
+   .playStore { height: 11vw; width: 10vw; }
+   .appStore { height: 15vw; margin-left: 10vw; width: 15vw; }
+   /* ABOUT APPLICATION */
+   .aboutApplication { text-align: center; }
+   .aboutApplicationCardZone { align-items: center; display: flex; flex-direction: column; margin-top: 2.5vw; width: 100%; }
+   .aboutApplicationCard { 
+      align-items: center; 
+      background: white; 
+      border-radius: 5vw;
+      box-shadow: 0px 4px 250px rgba(172, 172, 172, 0.15);
+      margin: 5vw 0;
+      padding: 5vw; 
+      text-align: center;
+      transition-duration: 0.5s;
+      width: 88%;
+   }
+   .aboutApplicationCardLogo { height: 25vw; width: 25vw; }
+   .aboutApplicationCardTitle { font-size: 5vw; font-weight: bold; }
+   .aboutApplicationCardText { font-size: 3.8vw; margin: 5vw 0; text-align: center; }
+   /* ALL FEATURES */
+   .allFeaturesRightSide { align-items: center; margin: auto; }
+   .allFeaturesCardZone { margin-top: 5vw; width: 100%; }
+   .allFeaturesCard { 
+      background: white; 
+      border-radius: 2.5vw; 
+      box-shadow: 0px 4px 250px rgba(172, 172, 172, 0.15); 
+      margin: 5vw 0; 
+      padding: 5vw; 
+   }
+   .allFeaturesCardTitle { font-size: 5vw; }
+   .allFeaturesCardText { font-size: 3.8vw; margin-top: 3vw; }
+   /* CAROUSEL */
+   .carouselZone { text-align: center; }
+   .carouselCard { 
+      background: white; 
+      border-radius: 2.5vw; 
+      box-shadow: 0vw 0.25vw 1vw rgba(172, 172, 172, 0.15); 
+      height: 150vw;
+      margin: 2.5vw;
+      padding: 5vw; 
+      transition-duration: 0.3s;
+      width: 100%;
+   }
+   .userImg { border-radius: 2.5vw; height: 15vw; width: 15vw; }
+   .userName { font-size: 4.8vw; font-weight: bold; margin-top: 4.8vw; }
+   .userJob { color: #56585B; font-size: 3.6vw; }
+   .userSay { font-size: 2.4vw; letter-spacing: 0.75px; margin-top: 2.5vw; text-align: center; }
+   /* FOOTER */
+   .footerZWallet { color: white; font-size: 6vw; font-weight: bold; }
+   .footerText { font-size: 3.6vw; margin: 10vw 0; width: 50vw; }
+   .footerBottom { border-top: 0.1vw solid #EFEFEF; font-size: 3.6vw; padding-top: 10vw; }
+   .footerBottomRight { margin-top: 10vw; }
+}

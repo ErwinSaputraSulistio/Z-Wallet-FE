@@ -1,4 +1,4 @@
-export default function CustomButton({btnCls, bgClr, btnBrdr, btnDsbl, btnType, txClr, value}) {
+export default function CustomButton({btnCls, bgClr, btnBrdr, btnDsbl, btnType, func, txClr, value}) {
    return(
       <div>
          {btnType === "submit" && btnDsbl === true ? 
@@ -20,12 +20,16 @@ export default function CustomButton({btnCls, bgClr, btnBrdr, btnDsbl, btnType, 
             {value}
          </button>
          :
-         <div className={"hoverThis " + btnCls} style={{
-            background: bgClr,
-            border: btnBrdr,
-            color: txClr,
-            transitionDuration: "0.5s"
-         }}>
+         <div 
+            className={"hoverThis " + btnCls} 
+            style={{
+               background: bgClr,
+               border: btnBrdr,
+               color: txClr,
+               transitionDuration: "0.5s"
+            }}
+            onClick={func}
+         >
             {value}
          </div>
          }
