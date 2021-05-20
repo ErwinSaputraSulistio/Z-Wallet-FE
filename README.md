@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Z-Wallet-FE
 
-## Getting Started
+## Displays :  
+### 1.) Login  
+![Login](https://user-images.githubusercontent.com/77045083/117056856-fc787200-ad46-11eb-8329-9d9aac0cf244.png)  
+### 2.) Home  
+![Home](https://user-images.githubusercontent.com/77045083/117717734-642a3380-b205-11eb-93ba-89c8bdb90d6b.png)
+### 3.) History  
+![History](https://user-images.githubusercontent.com/77045083/117717744-67252400-b205-11eb-88bf-f3b6df35b43c.png)
+### 4.) Transfer  
+![Transfer](https://user-images.githubusercontent.com/77045083/117717753-6ab8ab00-b205-11eb-9411-351e81aca24f.png)
+### 5.) Top-Up  
+![TopUp](https://user-images.githubusercontent.com/77045083/117056905-07330700-ad47-11eb-9ed7-a144bc6d00b4.png)  
+### 6.) Profile  
+![Profile](https://user-images.githubusercontent.com/77045083/117056914-08fcca80-ad47-11eb-952a-d08814ec1f3d.png)  
 
-First, run the development server:
+## How to install & start?  
+    git clone https://github.com/ErwinSaputraSulistio/Z-Wallet-FE
+    cd Z-Wallet-FE
+    npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Links :  
+Backend : https://github.com/ErwinSaputraSulistio/Z-Wallet-BE  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tools :  
+![HTML CSS JS Logo](https://user-images.githubusercontent.com/77045083/110452347-ad6fe100-80f7-11eb-94ab-c86a935c6e1f.png)
+![ReactJS](https://user-images.githubusercontent.com/77045083/118378083-645a7280-b5fb-11eb-84b3-92d0b0e09e57.png)
