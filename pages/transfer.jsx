@@ -65,7 +65,7 @@ export default function Transfer() {
       switchTriggerPIN(false)
       if(parseInt(saldoAmount) < 10000) { Swal.fire("Gagal transfer ?!", "Minimal transfer saldo adalah 10 ribu yah ~", "error") }
       else { 
-         const transferData = {sender: userData.user_id, receiver: receiverData[0].user_id, saldo: saldoAmount, note: transferNote, pin: joinAllPIN}
+         const transferData = {sender: userData.user_id, receiver: selectedReceiverData.user_id, saldo: saldoAmount, note: transferNote, pin: joinAllPIN}
          axios.post(process.env.SERVER + "/saldo/transfer", transferData, {
             headers: { authorization: 'Bearer ' + localStorage.getItem("jwtToken"), 'Content-Type': 'application/json' }
          })
@@ -92,7 +92,7 @@ export default function Transfer() {
             <title>Z-Wallet | Top Up</title>
          </Head>
          <Navbar/>
-         <div className={"displayRow " + css.transfer}>
+         <div className={css.transfer}>
             <Sidemenu/>
             {selectedReceiverData === null ?
             <div className={"displayColumn " + css.transferSaldo}>
@@ -199,50 +199,48 @@ export default function Transfer() {
                   pioc={(e) => { inputPINChange(e) }}
                />
             </div>
-            <div className={css.transferPINConfirmation} onClick={ () => { transferSaldo() } }>
-                  <CustomButton
-                     btnCls={css.transferSaldoButton}
-                     bgClr={
-                        inputValidation.pin1 === null ||
-                        inputValidation.pin2 === null ||
-                        inputValidation.pin3 === null ||
-                        inputValidation.pin4 === null ||
-                        inputValidation.pin5 === null ||
-                        inputValidation.pin6 === null 
-                     ? 
-                     "#DADADA" : "#6379F4"
-                     }
-                     btnBrdr={
-                        inputValidation.pin1 === null ||
-                        inputValidation.pin2 === null ||
-                        inputValidation.pin3 === null ||
-                        inputValidation.pin4 === null ||
-                        inputValidation.pin5 === null ||
-                        inputValidation.pin6 === null 
-                     ? 
-                     "0.1vw solid #DADADA" : "0.1vw solid #6379F4"}
-                     btnDsbl={
-                        inputValidation.pin1 === null ||
-                        inputValidation.pin2 === null ||
-                        inputValidation.pin3 === null ||
-                        inputValidation.pin4 === null ||
-                        inputValidation.pin5 === null ||
-                        inputValidation.pin6 === null 
-                     ? 
-                     true : false}
-                     btnType="submit"
-                     txClr={
-                        inputValidation.pin1 === null ||
-                        inputValidation.pin2 === null ||
-                        inputValidation.pin3 === null ||
-                        inputValidation.pin4 === null ||
-                        inputValidation.pin5 === null ||
-                        inputValidation.pin6 === null 
-                     ? 
-                     "#88888F" : "white"}
-                     value="Transfer"
-                  />
-               </div>
+               <CustomButton
+                  btnCls={css.transferSaldoButton}
+                  bgClr={
+                     inputValidation.pin1 === null ||
+                     inputValidation.pin2 === null ||
+                     inputValidation.pin3 === null ||
+                     inputValidation.pin4 === null ||
+                     inputValidation.pin5 === null ||
+                     inputValidation.pin6 === null 
+                  ? 
+                  "#DADADA" : "#6379F4"
+                  }
+                  btnBrdr={
+                     inputValidation.pin1 === null ||
+                     inputValidation.pin2 === null ||
+                     inputValidation.pin3 === null ||
+                     inputValidation.pin4 === null ||
+                     inputValidation.pin5 === null ||
+                     inputValidation.pin6 === null 
+                  ? 
+                  "0.1vw solid #DADADA" : "0.1vw solid #6379F4"}
+                  btnDsbl={
+                     inputValidation.pin1 === null ||
+                     inputValidation.pin2 === null ||
+                     inputValidation.pin3 === null ||
+                     inputValidation.pin4 === null ||
+                     inputValidation.pin5 === null ||
+                     inputValidation.pin6 === null 
+                  ? 
+                  true : false}
+                  func={ () => { transferSaldo() } }
+                  txClr={
+                     inputValidation.pin1 === null ||
+                     inputValidation.pin2 === null ||
+                     inputValidation.pin3 === null ||
+                     inputValidation.pin4 === null ||
+                     inputValidation.pin5 === null ||
+                     inputValidation.pin6 === null 
+                  ? 
+                  "#88888F" : "white"}
+                  value="Transfer"
+               />
          </div>
       </div>
    )

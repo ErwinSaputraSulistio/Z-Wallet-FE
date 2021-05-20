@@ -44,7 +44,7 @@ export default function Home({ history }) {
             <title>Z-Wallet | Home</title>
          </Head>
          <Navbar/>
-         <div className={"displayRow " + css.home}>
+         <div className={css.home}>
             <Sidemenu/>
             <div className={"displayColumn " + css.homeBalanceAndData}>
                <div className={css.topDashboard}>

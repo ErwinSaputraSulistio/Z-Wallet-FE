@@ -45,7 +45,7 @@ export default function TopUp() {
             <title>Z-Wallet | Top Up</title>
          </Head>
          <Navbar/>
-         <div className={"displayRow " + css.topUp}>
+         <div className={css.topUp}>
             <Sidemenu/>
             <div className={"displayColumn " + css.topUpSaldo}>
                <div>
@@ -53,7 +53,7 @@ export default function TopUp() {
                   <div className={css.topUpSaldoText}>Need more saldo to transfer? top-up here right now!</div>
                   <div className={css.topUpSaldoText}>Top-up process complete in less than 5 minutes!</div>
                </div>
-               <div className={"displayRow " + css.saldoAmountGroup}>
+               <div className={css.saldoAmountGroup}>
                   {saldoOption.map((item) => 
                      <div onClick = { () => { setSaldoAmount(item) } }>
                         <CustomButton

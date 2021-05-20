@@ -1,6 +1,6 @@
 /* DESKTOP */
 @media(min-width: 768px) {
-   .profile { height: auto; justify-content: space-between; padding: 3vw 9vw; }
+   .profile { display: flex; flex-direction: row; height: auto; justify-content: space-between; padding: 6vw 9vw; }
    .profileImage { border-radius: 1vw; height: 5vw; width: 5vw; }
    .editImage { margin-top: 1vw; width: 3vw; }
    .profileUserNameAndPhoneInfo { margin: 2vw 0; }
@@ -22,12 +22,15 @@
    .authInputOuterBorderStyling { align-items: center; justify-content: space-between; margin: 2vw 0 1vw 0; padding: 1vw 0; width: 100%; }
    .authInputBox { font-size: 1vw; margin: 0 2vw; width: 100%; }
    .profileChangePINButton, .profileUpdateButton { border-radius: 0.5vw; font-size: 1.1vw; font-weight: bold; padding: 1vw; width: 100%; }
+   .profileChangePasswordAreaZone { margin: auto; margin-top: 3vw; width: 50%; }
    /* CHANGE PIN */
+   .inputOldPINAreaZoneSpecial, .inputNewPINAreaZoneSpecial { justify-content: space-between; margin: auto; width: 50%; }
    .emptyInputBorderCreatePIN { border: 0.15vw solid #A9A9A9; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
    .emptyInputBoxCreatePIN { background: transparent; border-bottom: 0.1vw solid #A9A9A9; font-size: 2vw; height: 100%; text-align: center; width: 100%; }
    .filledInputBorderCreatePIN { border: 0.15vw solid #6E79F4; border-radius: 0.5vw; height: 8vh; padding: 0.77vw; width: 3.3vw; }
    .filledInputBoxCreatePIN { background: transparent; color: black; font-size: 2vw; font-weight: bold; height: 100%; text-align: center; width: 100%; }
    /* PROFILE UPDATE */
+   .updatePersonalInformationFormZone { margin-top: 3vw; }
    .updateProfileInputBorder { border-radius: 1vw; box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); margin-bottom: 1vw; padding: 1vw; }
    .inputProfileLabel { color: #A9A9A9; font-size: 1vw; margin-bottom: 0.5vw; }
    .inputProfile, .plus62 { font-size: 1vw; font-weight: bold; letter-spacing: 0.75px; }
@@ -37,5 +40,40 @@
 
 /* MOBILE */
 @media(max-width: 768px) {
-
+   .profile { height: auto; justify-content: space-between; }
+   .profileImage { border-radius: 3.3vw; height: 33vw; width: 33vw; }
+   .editImage { margin-top: 3.3vw; width: 15vw; }
+   .profileUserNameAndPhoneInfo { margin: 5.5vw 0; }
+   .profileUserName { font-size: 5.5vw; font-weight: bold; text-align: center; }
+   .profileUserPhone { color: #7A7886; font-size: 4vw; margin-top: 1vw; text-align: center; }
+   .profileBottomButton { border-radius: 1.5vw; font-size: 4vw; font-weight: bold; margin-top: 3.3vw; padding: 2.5vw; width: 69vw; }
+   .insideProfile, .insidePersonalInformation, .insideChangePassword, .insideChangePIN { 
+      background: white; 
+      border-radius: 2.5vw; 
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); 
+      margin: 24px;
+      padding: 24px;
+   }
+   .personalInformationText, .changeNewPasswordText, .changeNewPINText { font-size: 5.5vw; font-weight: bold; text-align: center; }
+   .typeNewPasswordText, .typeNewPINText { color: #7A7886; font-size: 2.5vw; margin-top: 2.5vw; text-align: center; }
+   .weGotYourPersonalText { color: #7A7886; font-size: 2.5vw; line-height: 3.3vw; margin-top: 5.5vw; text-align: center; }
+   .inputImageSize { height: 5.5vw; width: 5.5vw; }
+   .authInputOuterBorderStyling { align-items: center; justify-content: space-between; margin: 8.8vw 0; padding: 2.5vw 0; width: 100%; }
+   .authInputBox { font-size: 4vw; margin: 0 5.5vw; width: 100%; }
+   .profileChangePINButton, .profileUpdateButton { border-radius: 1.5vw; font-size: 4vw; font-weight: bold; padding: 2.5vw; width: 100%; }
+   .profileChangePINButton { margin-top: 5.5vw; }
+   /* CHANGE PIN */
+   .inputOldPINAreaZoneSpecial, .inputNewPINAreaZoneSpecial { justify-content: space-between; margin: auto; padding: 5.5vw 0; width: 100%; }
+   .inputOldPINAreaZoneSpecial { margin: 8.8vw 0; }
+   .emptyInputBorderCreatePIN { border: 0.15vw solid #A9A9A9; border-radius: 1.5vw; height: 12vw; padding: 1.5vw; width: 8.8vw; }
+   .emptyInputBoxCreatePIN { background: transparent; border-bottom: 0.1vw solid #A9A9A9; font-size: 4vw; height: 100%; text-align: center; width: 100%; }
+   .filledInputBorderCreatePIN { border: 0.15vw solid #6E79F4; border-radius: 1.5vw; height: 12vw; padding: 1.5vw; width: 8.8vw; }
+   .filledInputBoxCreatePIN { background: transparent; color: black; font-size: 4vw; font-weight: bold; height: 100%; text-align: center; width: 100%; }
+   /* PROFILE UPDATE */
+   .updatePersonalInformationFormZone { margin-top: 7.7vw; }
+   .updateProfileInputBorder { border-radius: 2.5vw; box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); margin-bottom: 2.5vw; padding: 2.5vw; }
+   .inputProfileLabel { color: #A9A9A9; font-size: 4vw; margin-bottom: 1.5vw; }
+   .inputProfile, .plus62 { font-size: 4vw; font-weight: bold; letter-spacing: 0.75px; }
+   .plus62 { margin-right: 2.5vw; }
+   .profileUpdateButtonArea { margin-top: 11vw; }
 }

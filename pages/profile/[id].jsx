@@ -254,7 +254,7 @@ export default function Profile() {
             <title>Z-Wallet | Profile</title>
          </Head>
          <Navbar updatedImage={updatedImage}/>
-         <div className={"displayRow " + css.profile}>
+         <div className={css.profile}>
             <Sidemenu/>
             {
             chosenOption === "Personal Information" ?
@@ -264,7 +264,7 @@ export default function Profile() {
                   <div>We got your personal information from the sign up process.</div>
                   <div>If you want to make changes on your information, do it here.</div>
                </div>
-               <form style={{marginTop: "3vw"}}>
+               <form className={css.updatePersonalInformationFormZone}>
                   <div className={"displayColumn " + css.updateProfileInputBorder}>
                      <div className={css.inputProfileLabel}>Verified E-mail</div>
                      <div className={css.inputProfile}>{userData.user_email} <span className={css.inputProfileLabel}>(can't be changed)</span></div>
@@ -299,7 +299,7 @@ export default function Profile() {
                <div className={css.changeNewPasswordText}>Change Password</div>
                <div className={css.typeNewPasswordText}>Type your new password to use in Z-Wallet.</div>
                <form>
-                  <div style={{margin: "auto", marginTop: "3vw", width: "50%"}}>
+                  <div className={css.profileChangePasswordAreaZone}>
                      <CustomInput 
                         ipClsBrdr={inputValidation.oldPassword === null ? "emptyInput " + css.authInputOuterBorderStyling : "filledInput " + css.authInputOuterBorderStyling}
                         ipClsImgLg={css.inputImageSize}
@@ -346,7 +346,7 @@ export default function Profile() {
                         pwEyeSh={inputValidation.retypePassword === null ? EmptyEyeLogoShow : FilledEyeLogoShow}
                      />
                   </div>
-                  <div style={{margin: "auto", marginTop: "3vw", width: "50%"}} onClick={(e) => { changeUserPassword(e) }}>
+                  <div className={css.profileChangePasswordAreaZone} onClick={(e) => { changeUserPassword(e) }}>
                      <CustomButton
                         btnCls={css.profileChangePINButton}
                         bgClr={
@@ -375,7 +375,7 @@ export default function Profile() {
                   <div className={css.changeNewPINText}>Change PIN</div>
                   <div className={css.typeNewPINText}>Type your new 6 digits security PIN to use in Z-Wallet.</div>
                   <form onSubmit={() => { checkAllPIN() }} style={{marginTop: "8vw"}}>
-                     <div className="displayRow" style={{justifyContent: "space-between", margin: "auto", width: "50%"}}>
+                     <div className={"displayRow " + css.inputNewPINAreaZoneSpecial}>
                         <InputPIN 
                            pibr={inputValidation.newpin1 === null ? css.emptyInputBorderCreatePIN : css.filledInputBorderCreatePIN} 
                            pibx={inputValidation.newpin1 === null ? css.emptyInputBoxCreatePIN : css.filledInputBoxCreatePIN} 
@@ -460,7 +460,7 @@ export default function Profile() {
                <div className={"displayColumn " + css.insideChangePIN}>
                   <div className={css.changeNewPINText}>Change PIN</div>
                   <div className={css.typeNewPINText}>Enter your current 6 digits Z-Wallet PIN below to continue to the next steps.</div>
-                     <div className="displayRow" style={{justifyContent: "space-between", margin: "auto", marginTop: "8vw", width: "50%"}}>
+                     <div className={"displayRow " + css.inputOldPINAreaZoneSpecial} style={{marginTop: "7.7vw"}}>
                         <InputPIN 
                            pibr={inputValidation.oldpin1 === null ? css.emptyInputBorderCreatePIN : css.filledInputBorderCreatePIN} 
                            pibx={inputValidation.oldpin1 === null ? css.emptyInputBoxCreatePIN : css.filledInputBoxCreatePIN} 

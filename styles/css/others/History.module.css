@@ -1,6 +1,6 @@
 /* DESKTOP */
 @media(min-width: 768px) {
-   .history { height: auto; justify-content: space-between; padding: 3vw 9vw; }
+   .history { display: flex; flex-direction: row; height: auto; justify-content: space-between; padding: 3vw 9vw; }
    .insideHistory { 
       background: white; 
       border-radius: 1vw; 
@@ -9,7 +9,7 @@
       width: 60vw;  
    }
    .transferHistoryText { border-bottom: 0.1vw solid #DEDEDE; font-size: 1.5vw; font-weight: bold; padding: 2vw; }
-   .sortArea { margin: auto; margin-top: 2vw; padding: 0 2vw; }
+   .sortArea { margin: auto; margin-top: 2vw; }
    .sortButton { align-items: center; background: #DADADA; font-size: 1vw; justify-content: center; padding: 1vw; transition-duration: 0.5s; width: 8vw; }
    .historySenderButton { border-radius: 1vw 0 0 1vw; }
    .historyAllButton { background: #A9A9A9; }
@@ -31,7 +31,6 @@
    @keyframes showOpacity{from{opacity: 0;} to{opacity: 1;}}
    .transferHistoryData:hover { box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); padding: 2vw 3.8vw; }
    .transferHistoryData:hover .transferHistoryDeleteButton { animation: showOpacity 1s; display: block; }
-   .transferHistoryDataInfo { width: 11vw; }
    .transferHistoryDataImg { border-radius: 1vw; height: 3.5vw; margin-right: 1vw; width: 3.5vw; }
    .transferUserName { font-size: 1.1vw; font-weight: bold; width: 10vw; }
    .transferCategory { color: #7A7886; font-size: 0.9vw; margin-top: 0.77vw; width: 15vw; }
@@ -55,5 +54,53 @@
 
 /* MOBILE */
 @media(max-width: 768px) {
-   .history { display: none; }
+   .history { height: auto; justify-content: space-between; }
+   .insideHistory { 
+      background: white; 
+      border-radius: 2.5vw; 
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05); 
+      height: auto;
+      margin: 24px;
+   }
+   .transferHistoryText { border-bottom: 0.1vw solid #DEDEDE; font-size: 5.5vw; font-weight: bold; padding: 5.5vw; text-align: center; }
+   .sortArea { margin: auto; margin-top: 5.5vw; }
+   .sortButton { align-items: center; background: #DADADA; font-size: 4vw; justify-content: center; padding: 2.5vw; transition-duration: 0.5s; width: 22vw; }
+   .historySenderButton { border-radius: 2.5vw 0 0 2.5vw; }
+   .historyAllButton { background: #A9A9A9; }
+   .historyReceiverButton { border-radius: 0 2.5vw 2.5vw 0; }
+   .transferHistoryDataZone { height: 88vw; margin-top: 5.5vw; padding: 5.5vw; }
+   .noTransferHistoryText { align-items: center; text-align: center; }
+   .noTransferHistoryBigText { font-size: 4vw; font-weight: bold; }
+   .noTransferHistorySmallText { color: #A9A9A9; font-size: 2.5vw; margin-top: 2.5vw; }
+   .confusedGif { height: 33vw; margin: 11vw 0; width: 33vw; }
+   .transferHistoryData { 
+      align-items: center; 
+      border-radius: 2.5vw;
+      box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.05);
+      justify-content: space-between;
+      margin-bottom: 3.3vw; 
+      padding: 5.5vw;
+      transition-duration: 0.5s;
+      width: 100%; 
+   }
+   .transferHistoryDataInfo { align-items: center; width: 44vw; }
+   .transferHistoryDataImg { border-radius: 2.5vw; height: 11vw; margin-right: 3.3vw; width: 11vw; }
+   .transferUserName { font-size: 4vw; font-weight: bold; }
+   .transferCategory { color: #7A7886; font-size: 2.5vw; margin-top: 0.77vw; width: 33vw; }
+   .transferAmount { font-size: 2.5vw; font-weight: bold; }
+   .transferHistoryDeleteButton { margin-left: 1vw; margin-right: -4.5vw; margin-top: -11.1vw; }
+   .deleteButton { height: 7.7vw; width: 7.7vw; }
+   .paginationArea { margin: auto; margin-bottom: 11vw; padding: 2vw; }
+   .paginationButton { 
+      align-items: center; 
+      background: #DADADA; 
+      border-radius: 1.5vw; 
+      color: black;
+      font-size: 4vw;
+      height: 12vw; 
+      justify-content: center; 
+      margin: 0 2.5vw; 
+      transition-duration: 0.5s;
+      width: 12vw; 
+   }
 }

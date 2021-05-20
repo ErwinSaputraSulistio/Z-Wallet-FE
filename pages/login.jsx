@@ -43,6 +43,7 @@ export default function Login() {
       .then((res) => {
          localStorage.setItem("userId", res.data.outputData.user_id)
          localStorage.setItem("jwtToken", res.data.outputData.jwtToken)
+         localStorage.setItem("selectedSidemenu", "Dashboard")
          Swal.fire("Berhasil login!", "Selamat datang, " + res.data.outputData.user_name + "!", "success")
          .then(() => { router.push("/home") })
       })

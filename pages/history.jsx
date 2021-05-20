@@ -109,7 +109,7 @@ export default function History() {
             <title>Z - Wallet | Transfer History</title>
          </Head>
          <Navbar/>
-         <div className={"displayRow " + css.history}>
+         <div className={css.history}>
             <Sidemenu/>
             <div className={"displayColumn " + css.insideHistory}>
                <div className={css.transferHistoryText}>Transfer History</div>

@@ -34,37 +34,37 @@ export default function Sidemenu() {
    // RETURN SIDEMENU
    return(
       <div className={"displayColumn " + css.sidemenu}>
-         <div className="displayColumn" style={{marginTop: "2vw"}}> 
+         <div className={css.sidemenuFourButton}> 
             {/* DASHBOARD */}
             <div 
             className={localStorageData === "Dashboard" ? "displayRow hoverThis " + css.sidemenuButtonActive : "displayRow hoverThis " + css.sidemenuButton} onClick={() => { router.push("/home") }}>
-               <img src={localStorageData === "Dashboard" ? DashboardActive : Dashboard} style={{height: "1.77vw", width: "1.77vw"}}/>
-               <span style={{fontSize: "1.1vw", margin: "0 1.5vw"}}>Dashboard</span>
+               <img className={css.sidemenuButtonLogo} src={localStorageData === "Dashboard" ? DashboardActive : Dashboard}/>
+               <span className={css.sidemenuButtonText}>Dashboard</span>
             </div>
             {/* TRANSFER */}
             <div 
             className={localStorageData === "Transfer" ? "displayRow hoverThis " + css.sidemenuButtonActive : "displayRow hoverThis " + css.sidemenuButton} onClick={() => { router.push("/transfer") }}>
-               <img src={localStorageData === "Transfer" ? TransferActive : Transfer} style={{height: "1.77vw", width: "1.77vw"}}/>
-               <span style={{fontSize: "1.1vw", margin: "0 1.5vw"}}>Transfer</span>
+               <img className={css.sidemenuButtonLogo} src={localStorageData === "Transfer" ? TransferActive : Transfer}/>
+               <span className={css.sidemenuButtonText}>Transfer</span>
             </div>
             {/* TOP-UP */}
             <div 
             className={localStorageData === "Top Up" ? "displayRow hoverThis " + css.sidemenuButtonActive : "displayRow hoverThis " + css.sidemenuButton} onClick={() => { router.push("/top-up") }}>
-               <img src={localStorageData === "Top Up" ? TopupActive : Topup} style={{height: "1.77vw", width: "1.77vw"}}/>
-               <span style={{fontSize: "1.1vw", margin: "0 1.5vw"}}>Top Up</span>
+               <img className={css.sidemenuButtonLogo} src={localStorageData === "Top Up" ? TopupActive : Topup}/>
+               <span className={css.sidemenuButtonText}>Top Up</span>
             </div>
             {/* PROFILE */}
             <div 
             className={localStorageData === "Profile" ? "displayRow hoverThis " + css.sidemenuButtonActive : "displayRow hoverThis " + css.sidemenuButton} onClick={() => { router.push("/profile/" + localStorage.getItem("userId")) }}>
-               <img src={localStorageData === "Profile" ? ProfileActive : Profile} style={{height: "1.77vw", width: "1.77vw"}}/>
-               <span style={{fontSize: "1.1vw", margin: "0 1.5vw"}}>Profile</span>
+               <img className={css.sidemenuButtonLogo} src={localStorageData === "Profile" ? ProfileActive : Profile}/>
+               <span className={css.sidemenuButtonText}>Profile</span>
             </div>
          </div>
          {/* LOG OUT */}
          <div 
             className={"displayRow hoverThis " + css.sidemenuButton} onClick={() => { logout() }}>
-               <img src={Logout} style={{height: "1.77vw", width: "1.77vw"}}/>
-               <span style={{fontSize: "1.1vw", margin: "0 1.5vw"}}>Logout</span>
+               <img className={css.sidemenuButtonLogo} src={Logout}/>
+               <span className={css.sidemenuButtonText}>Logout</span>
             </div>
       </div>
    )
