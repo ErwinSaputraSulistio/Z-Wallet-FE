@@ -21,6 +21,7 @@
 
 ## Links :  
 Backend : https://github.com/ErwinSaputraSulistio/Z-Wallet-BE  
+Deploy : https://z-wallet-erwinsaputrasulistio.vercel.app/  
 
 ## Tools :  
 ![HTML CSS JS Logo](https://user-images.githubusercontent.com/77045083/110452347-ad6fe100-80f7-11eb-94ab-c86a935c6e1f.png)
