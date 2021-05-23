@@ -89,7 +89,7 @@ export default function Transfer() {
    return(
       <div className="showInAnimation">
          <Head>
-            <title>Z-Wallet | Top Up</title>
+            <title>Z-Wallet | Transfer</title>
          </Head>
          <Navbar/>
          <div className={css.transfer}>
