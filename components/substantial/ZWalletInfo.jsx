@@ -1,5 +1,5 @@
 import css from '../../styles/css/UserAuth.module.css'
-import TwoPhones from '../../img/twoPhones.png'
+import TwoPhones from '../../public/img/twoPhones.png'
 
 export default function ZWalletInfo() {
    return(
