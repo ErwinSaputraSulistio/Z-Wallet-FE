@@ -70,12 +70,12 @@ export default function Home({ history }) {
                         <div className={css.bottomDashboardIncomeExpense}>
                            <img className={css.incomeExpenseArrow} src={Income}/>
                            <div className={css.dashboardIncomeExpenseText}>Income</div>
-                           <div className={css.dashboardIncomeExpenseAmount}>Rp2.120.000</div>
+                           <div className={css.dashboardIncomeExpenseAmount}>Rp.0</div>
                         </div>
                         <div className={css.bottomDashboardIncomeExpense}>
                            <img className={css.incomeExpenseArrow} src={Expense}/>
                            <div className={css.dashboardIncomeExpenseText}>Expense</div>
-                           <div className={css.dashboardIncomeExpenseAmount}>Rp1.560.000</div>
+                           <div className={css.dashboardIncomeExpenseAmount}>Rp.0</div>
                         </div>
                      </div>
                      <img className={css.bottomDashboardGraphic} src={DashboardGraphic}/>
