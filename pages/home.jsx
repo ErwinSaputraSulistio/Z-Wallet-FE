@@ -9,11 +9,11 @@ import Swal from 'sweetalert2'
 import axios from 'axios'
 import db from '../configs/db'
 // IMPORT IMAGE
-import TransferDashboard from '../img/transferButtonDashboard.png'
-import TopupDashboard from '../img/topupButtonDashboard.png'
-import Income from '../img/income.png'
-import Expense from '../img/expense.png'
-import DashboardGraphic from '../img/dashboardGraphic.png'
+import TransferDashboard from '../public/img/transferButtonDashboard.png'
+import TopupDashboard from '../public/img/topupButtonDashboard.png'
+import Income from '../public/img/income.png'
+import Expense from '../public/img/expense.png'
+import DashboardGraphic from '../public/img/dashboardGraphic.png'
 
 // HOME FUNCTION
 export default function Home({ history }) {

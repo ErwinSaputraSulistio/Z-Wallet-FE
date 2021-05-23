@@ -1,6 +1,6 @@
 import css from '../../styles/css/Substantial.module.css'
-import BlackBell from '../../img/bellBlack.png'
-import WhiteBell from '../../img/bellWhite.png'
+import BlackBell from '../../public/img/bellBlack.png'
+import WhiteBell from '../../public/img/bellWhite.png'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Swal from 'sweetalert2'

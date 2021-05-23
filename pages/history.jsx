@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import DeleteButton from '../img/deleteButton.png'
-import Confused from '../img/confused.gif'
+import DeleteButton from '../public/img/deleteButton.png'
+import Confused from '../public/img/confused.gif'
 
 // HISTORY FUNCTION
 export default function History() {

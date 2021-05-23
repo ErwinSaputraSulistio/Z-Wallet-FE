@@ -5,12 +5,12 @@ import InputPIN from '../components/diminutive/InputPIN'
 import Navbar from '../components/substantial/Navbar'
 import Sidemenu from '../components/substantial/Sidemenu'
 import Footer from '../components/substantial/Footer'
-import Search from '../img/searchLogo.png'
+import Search from '../public/img/searchLogo.png'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import Close from '../img/closeButton.png'
+import Close from '../public/img/closeButton.png'
 
 // TOP-UP
 export default function Transfer() {

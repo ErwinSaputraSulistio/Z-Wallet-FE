@@ -6,12 +6,12 @@ import ZWalletInfo from '../components/substantial/ZWalletInfo'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 // IMPORT CREATE PASSWORD LOGO
-import EmptyPassLogo from '../img/emptyPassLogo.png'
-import FilledPassLogo from '../img/filledPassLogo.png'
-import EmptyEyeLogoHide from '../img/emptyEyeLogoHide.png'
-import EmptyEyeLogoShow from '../img/emptyEyeLogoShow.png'
-import FilledEyeLogoHide from '../img/filledEyeLogoHide.png'
-import FilledEyeLogoShow from '../img/filledEyeLogoShow.png'
+import EmptyPassLogo from '../public/img/emptyPassLogo.png'
+import FilledPassLogo from '../public/img/filledPassLogo.png'
+import EmptyEyeLogoHide from '../public/img/emptyEyeLogoHide.png'
+import EmptyEyeLogoShow from '../public/img/emptyEyeLogoShow.png'
+import FilledEyeLogoHide from '../public/img/filledEyeLogoHide.png'
+import FilledEyeLogoShow from '../public/img/filledEyeLogoShow.png'
 
 // CREATE PASSWORD FUNCTION
 export default function CreateNewPassword() {

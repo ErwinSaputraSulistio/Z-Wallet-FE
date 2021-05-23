@@ -6,8 +6,8 @@ import ZWalletInfo from '../components/substantial/ZWalletInfo'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 // IMPORT LOGIN LOGO
-import EmptyMailLogo from '../img/emptyMailLogo.png'
-import FilledMailLogo from '../img/filledMailLogo.png'
+import EmptyMailLogo from '../public/img/emptyMailLogo.png'
+import FilledMailLogo from '../public/img/filledMailLogo.png'
 
 // LOGIN FUNCTION
 export default function Login() {

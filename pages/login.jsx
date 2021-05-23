@@ -8,14 +8,14 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 // IMPORT LOGIN LOGO
-import EmptyMailLogo from '../img/emptyMailLogo.png'
-import EmptyPassLogo from '../img/emptyPassLogo.png'
-import FilledMailLogo from '../img/filledMailLogo.png'
-import FilledPassLogo from '../img/filledPassLogo.png'
-import EmptyEyeLogoHide from '../img/emptyEyeLogoHide.png'
-import EmptyEyeLogoShow from '../img/emptyEyeLogoShow.png'
-import FilledEyeLogoHide from '../img/filledEyeLogoHide.png'
-import FilledEyeLogoShow from '../img/filledEyeLogoShow.png'
+import EmptyMailLogo from '../public/img/emptyMailLogo.png'
+import EmptyPassLogo from '../public/img/emptyPassLogo.png'
+import FilledMailLogo from '../public/img/filledMailLogo.png'
+import FilledPassLogo from '../public/img/filledPassLogo.png'
+import EmptyEyeLogoHide from '../public/img/emptyEyeLogoHide.png'
+import EmptyEyeLogoShow from '../public/img/emptyEyeLogoShow.png'
+import FilledEyeLogoHide from '../public/img/filledEyeLogoHide.png'
+import FilledEyeLogoShow from '../public/img/filledEyeLogoShow.png'
 
 // LOGIN FUNCTION
 export default function Login() {

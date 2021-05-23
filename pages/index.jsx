@@ -5,13 +5,13 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import CustomButton from '../components/diminutive/CustomButton'
 // IMAGES
-import Phone from '../img/OnePhone.png'
-import PS from '../img/playStore.png'
-import AS from '../img/appStore.png'
-import OurPartner from '../img/ourPartner.png'
-import First from '../img/firstCard.png'
-import Second from '../img/secondCard.png'
-import Third from '../img/thirdCard.png'
+import Phone from '../public/img/onePhone.png'
+import PS from '../public/img/playStore.png'
+import AS from '../public/img/appStore.png'
+import OurPartner from '../public/img/ourPartner.png'
+import First from '../public/img/firstCard.png'
+import Second from '../public/img/secondCard.png'
+import Third from '../public/img/thirdCard.png'
 
 export default function LandingPage() {
    // BASE CONF
