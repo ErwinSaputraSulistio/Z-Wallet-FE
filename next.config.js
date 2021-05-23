@@ -1,4 +1,4 @@
 const withImages = require('next-images')
 module.exports = withImages({
-  env: { SERVER: "http://ciwin-zwallet.herokuapp.com/v1" }
+  env: { SERVER: "https://ciwin-zwallet.herokuapp.com/v1" }
 })
