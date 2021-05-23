@@ -106,7 +106,7 @@ export default function History() {
    return(
       <div className="showInAnimation" style={{background: "#FAFCFF"}}>
          <Head>
-            <title>Z - Wallet | Transfer History</title>
+            <title>Z-Wallet | Transfer History</title>
          </Head>
          <Navbar/>
          <div className={css.history}>

@@ -29,6 +29,14 @@ export default function Login() {
          Swal.fire("Ada apa ini ?!","Anda sudah login, jika ingin mengganti akun harap logout terlebih dahulu!", "warning")
          .then(() => { router.push("/home") })
       }
+      else if(localStorage.getItem("verifyStatus") === "Success") {
+         Swal.fire("Selesai!", "Akun kamu berhasil di verifikasi, silahkan login!", "success")
+         .then(() => { localStorage.removeItem("verifyStatus") })
+      }
+      else if(localStorage.getItem("verifyStatus") === "Failed") {
+         Swal.fire("Error?!", "Gagal verifikasi akun, token aktivasi tidak valid!", "error")
+         .then(() => { localStorage.removeItem("verifyStatus") })
+      }
    })
    // SET LOGIN FUNCTION
    const inputChange = (e) => {
