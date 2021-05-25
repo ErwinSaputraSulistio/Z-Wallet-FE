@@ -1,11 +1,15 @@
-# Z-Wallet-FE
 <p align="center">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117056856-fc787200-ad46-11eb-8329-9d9aac0cf244.png" width="415">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117717734-642a3380-b205-11eb-93ba-89c8bdb90d6b.png" width="415">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117717744-67252400-b205-11eb-88bf-f3b6df35b43c.png" width="415">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117717753-6ab8ab00-b205-11eb-9411-351e81aca24f.png" width="415">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117056905-07330700-ad47-11eb-9ed7-a144bc6d00b4.png" width="415">
-  <img height="215" src="https://user-images.githubusercontent.com/77045083/117056914-08fcca80-ad47-11eb-952a-d08814ec1f3d.png" width="415">
+  <img src="https://user-images.githubusercontent.com/77045083/119468721-e7549900-bd70-11eb-8c04-def39835f5b4.png" width="222">
+</p>
+
+# Z-Wallet - FE
+<p align="center">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463697-321fe200-bd6c-11eb-8dd9-701e821a7416.png" width="415">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463702-33e9a580-bd6c-11eb-85e9-05fd1d6f1412.png" width="415">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463712-36e49600-bd6c-11eb-985b-7c888cac3367.png" width="415">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463722-3815c300-bd6c-11eb-8f5a-e8b7d28b65e5.png" width="415">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463726-39df8680-bd6c-11eb-9056-c6b99d6efdcb.png" width="415">
+  <img height="215" src="https://user-images.githubusercontent.com/77045083/119463734-3ba94a00-bd6c-11eb-9eb5-0eb358f0e4bc.png" width="415">
 </p>
 
 ## How to install & start?  
