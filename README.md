@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/77045083/119468721-e7549900-bd70-11eb-8c04-def39835f5b4.png" width="222">
 </p>
 
-## User Interface (UI) - Preview :
+## :computer: User Interface (UI) - Preview :
 <p align="center">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463697-321fe200-bd6c-11eb-8dd9-701e821a7416.png" width="415">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463702-33e9a580-bd6c-11eb-85e9-05fd1d6f1412.png" width="415">
@@ -12,13 +12,13 @@
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463734-3ba94a00-bd6c-11eb-9eb5-0eb358f0e4bc.png" width="415">
 </p>
 
-## How to install & start?  
+## :page_with_curl: How to install & start?  
     git clone https://github.com/ErwinSaputraSulistio/Z-Wallet-FE
     cd Z-Wallet-FE
     npm run dev
 Backend (GitHub Repository) : https://github.com/ErwinSaputraSulistio/Z-Wallet-BE  
 
-## Deploy - Vercel :
+## :pushpin: Deploy - Vercel :
 1.) Login : https://z-wallet-erwinsaputrasulistio.vercel.app/login  
 2.) Register : https://z-wallet-erwinsaputrasulistio.vercel.app/register  
 3.) Forgot Password : https://z-wallet-erwinsaputrasulistio.vercel.app/reset-password  
