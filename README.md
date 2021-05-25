@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/77045083/119468721-e7549900-bd70-11eb-8c04-def39835f5b4.png" width="222">
 </p>
 
-# Z-Wallet - FE
+## User Interface (UI) - Preview :
 <p align="center">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463697-321fe200-bd6c-11eb-8dd9-701e821a7416.png" width="415">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463702-33e9a580-bd6c-11eb-85e9-05fd1d6f1412.png" width="415">
