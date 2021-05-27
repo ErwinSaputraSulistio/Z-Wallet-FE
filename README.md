@@ -2,6 +2,20 @@
   <img src="https://user-images.githubusercontent.com/77045083/119468721-e7549900-bd70-11eb-8c04-def39835f5b4.png" width="222">
 </p>
 
+## :mag_right: About Z-Wallet
+    Z-Wallet is web application that help our users to transfer their money to another user easily via 
+    online with a more simple way. Just create an account (register), login and top-up some saldo, 
+    then transfer! So easy and simple right? 
+    
+    Now they don't need to go to a bank anymore, 
+    because Z-Wallet handles all of the money transfers for them.
+
+## :page_with_curl: How to install & start?  
+    git clone https://github.com/ErwinSaputraSulistio/Z-Wallet-FE
+    cd Z-Wallet-FE
+    npm run dev
+Backend (GitHub Repository) : https://github.com/ErwinSaputraSulistio/Z-Wallet-BE  
+
 ## :computer: User Interface (UI) - Preview :
 <p align="center">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463697-321fe200-bd6c-11eb-8dd9-701e821a7416.png" width="415">
@@ -11,12 +25,6 @@
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463726-39df8680-bd6c-11eb-9056-c6b99d6efdcb.png" width="415">
   <img height="215" src="https://user-images.githubusercontent.com/77045083/119463734-3ba94a00-bd6c-11eb-9eb5-0eb358f0e4bc.png" width="415">
 </p>
-
-## :page_with_curl: How to install & start?  
-    git clone https://github.com/ErwinSaputraSulistio/Z-Wallet-FE
-    cd Z-Wallet-FE
-    npm run dev
-Backend (GitHub Repository) : https://github.com/ErwinSaputraSulistio/Z-Wallet-BE  
 
 ## :pushpin: Deploy - Vercel :
 1.) Login : https://z-wallet-erwinsaputrasulistio.vercel.app/login  
