@@ -48,6 +48,8 @@ export default function CreateNewPassword() {
       })
       .catch((err) => { Swal.fire("Error?!", err.response.data.errorMessage, "error") })
    }
+   console.log(pid)
+   console.log(inputData)
    // RETURN
    return(
       <div className="displayRow showInAnimation">
