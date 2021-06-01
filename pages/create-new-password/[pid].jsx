@@ -42,7 +42,7 @@ export default function CreateNewPassword() {
    const setNewPassword = (e) => {
       e.preventDefault()
       const { checkJwtToken, enterNewPassword, retypeNewPassword } = inputData
-      const setNewPasswordData = { checkJwtToken, enterNewPassword, retypeNewPassword }
+      const setNewPasswordData = { checkJwtToken, newPassword: enterNewPassword, retypePassword: retypeNewPassword }
       axios.put(process.env.SERVER + "/users/reset/new-password", setNewPasswordData)
       .then(() => {
          Swal.fire("Berhasil!", "Proses reset password selesai, silahkan coba login dengan password baru!", "success")
