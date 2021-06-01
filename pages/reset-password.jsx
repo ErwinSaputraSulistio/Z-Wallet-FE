@@ -5,6 +5,8 @@ import CustomInput from '../components/diminutive/CustomInput'
 import ZWalletInfo from '../components/substantial/ZWalletInfo'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import axios from 'axios'
+import Swal from 'sweetalert2'
 // IMPORT LOGIN LOGO
 import EmptyMailLogo from '../public/img/emptyMailLogo.png'
 import FilledMailLogo from '../public/img/filledMailLogo.png'
@@ -20,6 +22,17 @@ export default function Login() {
       setInputData({...inputData, [e.target.name]: e.target.value})
       if(e.target.value !== "") { setInputValidation({...inputValidation, [e.target.name]: true}) }
       else { setInputValidation({...inputValidation, [e.target.name]: null}) } 
+   }
+   // SEND RESET PASSWORD EMAIL
+   const sendMail = (e) => {
+      e.preventDefault()
+      const sendThisResetMail = { userEmail: inputData.email }
+      axios.post(process.env.SERVER + "/users/reset/send-mail", sendThisResetMail)
+      .then(() => {
+         Swal.fire("Berhasil!", "Silahkan cek email kamu untuk melanjutkan proses reset password!", "success")
+         .then(() => { router.push("/login") })
+      })
+      .catch(() => { Swal.fire("Error?!", "Terjadi sebuah kesalahan, silahkan coba lagi!", "error") })
    }
    // RETURN
    return(
@@ -46,7 +59,7 @@ export default function Login() {
             <div className={css.authToYourExistingAccount}>
                <div style={{color: "#9F9F9F"}}>Enter your Z-Wallet e-mail so we can send you a password reset link.</div>
             </div>
-            <form onSubmit={() => { router.push("/create-new-password") }} >
+            <form onSubmit={(e) => { sendMail(e) }} >
                <CustomInput 
                   ipClsBrdr={inputValidation.email === null ? "emptyInput " + css.authInputOuterBorderStyling : "filledInput " + css.authInputOuterBorderStyling}
                   ipClsImgLg={css.inputImageSize}

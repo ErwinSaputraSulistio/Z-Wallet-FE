@@ -4,7 +4,9 @@ import CustomButton from '../components/diminutive/CustomButton'
 import CustomInput from '../components/diminutive/CustomInput'
 import ZWalletInfo from '../components/substantial/ZWalletInfo'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import Swal from 'sweetalert2'
 // IMPORT CREATE PASSWORD LOGO
 import EmptyPassLogo from '../public/img/emptyPassLogo.png'
 import FilledPassLogo from '../public/img/filledPassLogo.png'
@@ -17,6 +19,7 @@ import FilledEyeLogoShow from '../public/img/filledEyeLogoShow.png'
 export default function CreateNewPassword() {
    // SET CREATE PASSWORD CONFIG
    const router = useRouter()
+   const { pid } = router.query
    const [inputData, setInputData] = useState({})
    const [inputValidation, setInputValidation] = useState({enterNewPassword: null, retypeNewPassword: null})
    // SET CREATE PASSWORD FUNCTION
@@ -24,6 +27,26 @@ export default function CreateNewPassword() {
       setInputData({...inputData, [e.target.name]: e.target.value})
       if(e.target.value !== "") { setInputValidation({...inputValidation, [e.target.name]: true}) }
       else { setInputValidation({...inputValidation, [e.target.name]: null}) } 
+   }
+   useEffect(() => {
+      axios.get(process.env.SERVER + "/users/reset/" + pid)
+      .then(() => { setInputData({ ...inputData, checkJwtToken: pid }) })
+      .catch(() => {
+         Swal.fire("Error?!", "Token JWT untuk reset password invalid, kembali ke halaman login!", "error")
+         .then(() => { router.push("/login") })
+      })
+   }, [])
+   // ONCHANGE & SET NEW PASSWORD
+   const setNewPassword = (e) => {
+      e.preventDefault()
+      const { checkJwtToken, enterNewPassword, retypeNewPassword } = inputData
+      const setNewPasswordData = { checkJwtToken, enterNewPassword, retypeNewPassword }
+      axios.put(process.env.SERVER + "/users/reset/new-password", setNewPasswordData)
+      .then(() => {
+         Swal.fire("Berhasil!", "Proses reset password selesai, silahkan coba login dengan password baru!", "success")
+         .then(() => { router.push("/login") })
+      })
+      .catch((err) => { Swal.fire("Error?!", err.response.data.errorMessage, "error") })
    }
    // RETURN
    return(
@@ -50,7 +73,7 @@ export default function CreateNewPassword() {
             <div className={css.authToYourExistingAccount}>
                <div style={{color: "#9F9F9F"}}>Create and confirm your new password so you can login to Z-Wallet.</div>
             </div>
-            <form onSubmit={() => { router.push("/login") }}>
+            <form onSubmit={ (e) => { setNewPassword(e) } }>
                <CustomInput 
                   ipClsBrdr={inputValidation.enterNewPassword === null ? "emptyInput " + css.authInputOuterBorderStyling : "filledInput " + css.authInputOuterBorderStyling}
                   ipClsImgLg={css.inputImageSize}
