@@ -29,13 +29,15 @@ export default function CreateNewPassword() {
       else { setInputValidation({...inputValidation, [e.target.name]: null}) } 
    }
    useEffect(() => {
-      axios.get(process.env.SERVER + "/users/reset/" + pid)
-      .then(() => { setInputData({ ...inputData, checkJwtToken: pid }) })
-      .catch(() => {
-         Swal.fire("Error?!", "Token JWT untuk reset password invalid, kembali ke halaman login!", "error")
-         .then(() => { router.push("/login") })
-      })
-   }, [])
+      if(pid !== undefined) {
+         axios.get(process.env.SERVER + "/users/reset/" + pid)
+         .then(() => { setInputData({ ...inputData, checkJwtToken: pid }) })
+         .catch(() => {
+            Swal.fire("Error?!", "Token JWT untuk reset password invalid, kembali ke halaman login!", "error")
+            .then(() => { router.push("/login") })
+         })
+      }
+   }, [pid])
    // ONCHANGE & SET NEW PASSWORD
    const setNewPassword = (e) => {
       e.preventDefault()
@@ -48,8 +50,6 @@ export default function CreateNewPassword() {
       })
       .catch((err) => { Swal.fire("Error?!", err.response.data.errorMessage, "error") })
    }
-   console.log(pid)
-   console.log(inputData)
    // RETURN
    return(
       <div className="displayRow showInAnimation">
